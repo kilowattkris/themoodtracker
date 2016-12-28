@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# REST_FRAMEWORK = {
+#     'DEFAULT_FILTER_BACKENDS' = ('rest_framework.filters.DjangoFilterBackend',)
+# }
+
 
 # Application definition
 
@@ -38,6 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'webpack_loader',
+    'rest_framework',
+    'log',
+    'tracker',
 ]
 
 WEBPACK_LOADER = {
